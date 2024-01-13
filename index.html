@@ -7,7 +7,7 @@
     <title>Harrison Dolphin</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, Arial, sans-serif;
             margin: 20px;
             background-color: #4E4934; /* Pantone 448 C */
             color: #FFFFFF; /* White text for better readability on a dark background */
@@ -22,22 +22,43 @@
 
         p {
             color: #B9A992; /* Light brown color for paragraphs */
+            font-size: 1.5em; /* Adjust font size for the introductory text */
         }
 
         .intro-text {
             color: #CCC; /* Slightly grayish-white color */
-            font-family: Helvetica, Arial, sans-serif; /* Use Helvetica font */
         }
 
         marquee {
             background-color: #E0CA3C; /* Solid yellow color for the marquee */
             color: #000000; /* Black text color inside the marquee */
             padding: 10px;
+            font-size: 1.2em; /* Adjust font size for the marquee text */
+        }
+
+        marquee a {
+            text-decoration: none; /* Remove link underline */
+            color: inherit; /* Use the default color for links */
+        }
+
+        .scaled-image {
+            max-width: 100%; /* Scale the image down to fit its container */
+            height: auto; /* Maintain image proportions */
         }
     </style>
 </head>
 
 <body>
+    <h1>Welcome to Harrison Dolphin's Website</h1>
+
+    <div class="intro-text">
+        <p>Hi, I'm Harrison Dolphin, a guitarist & composer based in London.</p>
+    </div>
+
+    <!-- Scaled image from the 'github images' folder -->
+    <img class="scaled-image" src="github images/991673850028.jpg">
+
+    <!-- Marquee below the title text -->
     <marquee behavior="scroll" direction="left" scrollamount="3">
         <a href="#music">music</a> /
         <a href="#gigs">gigs</a> /
@@ -45,13 +66,6 @@
         <a href="#about">about</a> /
         <a href="#contact">contact</a>
     </marquee>
-
-    <div class="intro-text">
-        <p>Hi, I'm Harrison Dolphin, a guitarist & composer based in London.</p>
-    </div>
-
-    <!-- Image from the 'github images' folder -->
-    <img src="github images/991673850028.JPG" alt="Description of the image">
 
     <!-- You can add more content here, such as paragraphs, links, and images. -->
 
